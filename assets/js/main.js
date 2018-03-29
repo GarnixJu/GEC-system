@@ -10,14 +10,20 @@
     //API_URL_1 = 'http://nlp-ryze.cs.nthu.edu.tw:1215/translate/'
     HEADERS = {'Content-Type': 'application/json; charset=UTF-8', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*'}
 
-    $('#submitB').click(function() {
-        var text = $('#enterValue').val();
+	$( "#textarea" ).on("keyup", function(e){
+		console.log($("#textarea").val());
+		if(event.keyCode == 13) {
+			submitQuery();
+		};
+	  });
+	function submitQuery(){
+		var text = $('#textarea').val();
+		console.log(text);
         //send to server and process response
 		gec_it_post(text);
 		$( "#show-box" )
 		.css( 'border', 'solid 0.01em rgb(204, 230, 245)' );
-       
-	});
+	}
 	
     function gec_it_post(query){
         // document.getElementById("show-box").textContent = "result:"+query;
