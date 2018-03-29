@@ -35,13 +35,13 @@
             dataType: 'json',
             success: function (data) {
                 // console.log("success")
-				console.info(data);
+				
 				var content = data.word_diff.replace(/\[-(.*?)-\]/g,
 				'<span class="deletion">$1</span>').
 				replace(/\{\+(.+?)\+\}/g, '<span class="correction">$1</span>');
 				console.log(content);
 				// $('#correct-sec').html(content);
-				document.getElementById("show-text").innerHTML = '</br>' + content;
+				document.getElementById("show-text").innerHTML = content;
                 // document.getElementById("show-text").textContent = content.result;
             }, 
             error: function(XMLHttpRequest, textStatus, errorThrown) { 
