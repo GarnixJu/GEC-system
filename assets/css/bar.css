@@ -1,0 +1,12 @@
+._bar {
+    height: 55px;
+    width: 100%;
+    color: #fafafa;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+img{
+    position:relative;
+    top:15px;
+}
