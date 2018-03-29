@@ -41,7 +41,7 @@
 				replace(/\{\+(.+?)\+\}/g, '<span class="correction">$1</span>');
 				console.log(content);
 				// $('#correct-sec').html(content);
-				document.getElementById("show-text").innerHTML = content;
+				document.getElementById("show-text").innerHTML = '</br>' + content;
                 // document.getElementById("show-text").textContent = content.result;
             }, 
             error: function(XMLHttpRequest, textStatus, errorThrown) { 
