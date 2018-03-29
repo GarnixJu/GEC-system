@@ -11,14 +11,14 @@
     HEADERS = {'Content-Type': 'application/json; charset=UTF-8', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*'}
 
 	$( "#textarea" ).on("keyup", function(e){
-		console.log($("#textarea").val());
+		// console.log($("#textarea").val());
 		if(event.keyCode == 13) {
 			submitQuery();
 		};
 	  });
 	function submitQuery(){
 		var text = $('#textarea').val();
-		console.log(text);
+		// console.log(text);
         //send to server and process response
 		gec_it_post(text);
 		$( "#show-box" )
@@ -40,7 +40,7 @@
 				'<span class="deletion">$1</span>').
 				replace(/\{\+(.+?)\+\}/g, '<span class="correction">$1</span>').
 				replace(/(\r\n|\n)/g, "<br />");
-				console.log(content);
+				// console.log(content);
 				// $('#correct-sec').html(content);
 				document.getElementById("show-text").innerHTML = content;
                 // document.getElementById("show-text").textContent = content.result;
