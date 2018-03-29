@@ -39,7 +39,7 @@
 				var content = data.word_diff.replace(/\[-(.*?)-\]/g,
 				'<span class="deletion">$1</span>').
 				replace(/\{\+(.+?)\+\}/g, '<span class="correction">$1</span>').
-				replace("(\r\n|\n)", "<br />");
+				replace(/(\r\n|\n)/g, "<br />");
 				console.log(content);
 				// $('#correct-sec').html(content);
 				document.getElementById("show-text").innerHTML = content;
