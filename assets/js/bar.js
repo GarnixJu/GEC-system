@@ -18,7 +18,7 @@ bar5.html(bar5_htmlFrag);
 
 
 $('._747451-toolItem._intro').click(function(){
-    document.location.href="https://www.facebook.com/garnix.ju";
+   // document.location.href="https://www.facebook.com/garnix.ju";
 });
 
 $('._747451-toolItem._work').click(function(){
