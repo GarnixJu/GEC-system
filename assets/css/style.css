@@ -8639,7 +8639,7 @@ body,html {
 ._a51a502a-editor-page-editor {
     position: relative;
     display: table-cell;
-    height: 100vh;
+    height: 100%;
     background: url(https://denali-static.grammarly.com/files/3f2e79ec30380ea3ceb58e0446081d70/editor-gradient.png);
     background-color: #f5f6f5;
     background-repeat: repeat-y;
@@ -8648,17 +8648,17 @@ body,html {
 }
 
 ._af1f0d33-editor-page-scrollWrap {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     overflow-y: scroll;
     padding-top: 40px;
-    height: 100vh;
-    border-bottom: 35px solid transparent;
-    transition: padding-top .2s
+    height: 100%;
+   /* border-bottom: 35px solid transparent;
+    transition: padding-top .2s*/
 }
 
-._1b272a6a-editor-page-newDocument ._07439407-editor-page-editorLayout:first-child {
+/* ._1b272a6a-editor-page-newDocument ._07439407-editor-page-editorLayout:first-child {
     padding-top: 155px
-}
+} */
 
 ._bfb86e66-editor-page-titleWrap {
     margin: 12px 0 20px;
@@ -8702,7 +8702,7 @@ body,html {
 }
 
 ._07439407-editor-page-editorLayout {
-    position: relative;
+    
     display: -webkit-flex;
     display: flex;
     max-width: 1600px;
@@ -8751,7 +8751,7 @@ body,html {
 
 ._12f1a8c9-editor-page-editorCol,._adbfa1e6-editor-page-cardsCol {
     z-index: 1;
-    transition: margin .2s
+   /* transition: margin .2s */
 }
 
 ._adbfa1e6-editor-page-cardsCol {
@@ -8763,17 +8763,17 @@ body,html {
 }
 
 ._12f1a8c9-editor-page-editorCol,._adbfa1e6-editor-page-cardsCol {
-    position: relative;
+   /* position: relative;
     transition: -webkit-transform .4s;
     transition: transform .4s;
-    transition: transform .4s,-webkit-transform .4s
+    transition: transform .4s,-webkit-transform .4s*/
 }
 
 ._12f1a8c9-editor-page-editorCol {
     min-width: 283px;
     max-width: 950px;
     width: 64%;
-    will-change: transform
+/*    will-change: transform*/
 }
 
 ._3e46e1b1-editor-page-bannerWrapper {

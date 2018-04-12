@@ -77,14 +77,14 @@
 				// Hide panel on swipe.
 					hideOnSwipe: false,
 
-				// Reset scroll position on hide.
-					resetScroll: false,
+				// // Reset scroll position on hide.
+				// 	resetScroll: false,
 
-				// Reset forms on hide.
-					resetForms: false,
+				// // Reset forms on hide.
+				// 	resetForms: false,
 
-				// Side of viewport the panel will appear.
-					side: null,
+				// // Side of viewport the panel will appear.
+				// 	side: null,
 
 				// Target element for "class".
 					target: $this,
