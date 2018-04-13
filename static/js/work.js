@@ -4,11 +4,30 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie != '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = jQuery.trim(cookies[i]);
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+var csrftoken = getCookie('csrftoken');
+
 (function($) {
-	API_URL = 'http://nlp-ryze.cs.nthu.edu.tw:1215/translate/'
-	API_URL1 = 'https://fathomless-wave-32876.herokuapp.com/messages'
-    //API_URL_1 = 'http://nlp-ryze.cs.nthu.edu.tw:1215/translate/'
-    HEADERS = {'Content-Type': 'application/json; charset=UTF-8', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*'}
+	API_URL = 'translate/';
+    // set up ajax csrf-token
+    $.ajaxSetup({
+        headers: {"X-CSRFToken": csrftoken}
+    });
+    // HEADERS = {'Content-Type': 'application/json; charset=UTF-8', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*'}
 
 	$( "#textarea" ).on("keyup", function(e){
 		// console.log($("#textarea").val());
@@ -29,9 +48,8 @@
         // document.getElementById("show-box").textContent = "result:"+query;
         $.ajax({
             type: "POST",
-            url: API_URL1,
+            url: API_URL,
             data: JSON.stringify({text: query}),
-            headers: HEADERS,
             dataType: 'json',
             success: function (data) {
                 // console.log("success")

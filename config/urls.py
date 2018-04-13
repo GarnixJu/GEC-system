@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path
 
 from index.views import index
+from gec.views import correct_it
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('translate/', correct_it),
     path('', index),
 ]
