@@ -528,5 +528,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     #header nav ul li {
         display: inline-block;
     }
+    .showBox{
+        position: relative;
+    }
+    .showText{
+        position: relative;
+    }
+    ._ed4374-plainTextTitle{
+        position: relative;
+    }
 
  </style>
