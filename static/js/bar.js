@@ -4,11 +4,11 @@ var bar3 = $('._bar._ba3');
 var bar4 = $('._bar._ba4');
 var bar5 = $('._bar._ba5');
 
-var bar1_htmlFrag = '<img src ="assets/img/info.svg" width="60" height="25" >'
-var bar2_htmlFrag = '<img src ="assets/img/work.svg" width="60" height="25" >'
-var bar3_htmlFrag = '<img src ="assets/img/contact.svg" width="60" height="25" >'
-var bar4_htmlFrag = '<img src ="assets/img/Linggle.svg" width="60" height="25" >'
-var bar5_htmlFrag = '<img src ="assets/img/Writeahead.svg" width="60" height="25" >'
+var bar1_htmlFrag = '<img src ="static/img/info.svg" width="60" height="25" >'
+var bar2_htmlFrag = '<img src ="static/img/work.svg" width="60" height="25" >'
+var bar3_htmlFrag = '<img src ="static/img/contact.svg" width="60" height="25" >'
+var bar4_htmlFrag = '<img src ="static/img/Linggle.svg" width="60" height="25" >'
+var bar5_htmlFrag = '<img src ="static/img/Writeahead.svg" width="60" height="25" >'
 
 bar1.html(bar1_htmlFrag);
 bar2.html(bar2_htmlFrag);

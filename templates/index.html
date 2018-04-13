@@ -1,4 +1,5 @@
-<!doctype html>
+{% load static %}
+<!DOCTYPE HTML>
 <html style="height:100%;">
 
 <head>
@@ -10,17 +11,14 @@
     <meta name="application-name" content="GEC" />
     <title>GEC Cool English</title>
    
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/work.css" />
-    <link rel="stylesheet" href="assets/css/bar.css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/work.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bar.css' %}" />
 
 </head>
 
 <body  class="editorTs"  >
     <div id="page" style="height:100%;">
-       
-           
-                
                     <div class="_de91e2-dropZoneElement" >
                         <div class="_de91e2-dropzone">
                             <div class="_de91e2-dropzoneMiddleblock">Drop a text file here</div>
@@ -250,11 +248,11 @@
     </div>
     </div>
         <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/skel.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/work.js"></script>
-        <script src="assets/js/bar.js"></script>
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/skel.min.js' %}"></script>
+        <script src="{% static 'js/util.js' %}"></script>
+        <script src="{% static 'js/work.js' %}"></script>
+        <script src="{% static 'js/bar.js' %}"></script>
 
 
 
