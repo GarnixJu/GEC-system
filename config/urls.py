@@ -19,8 +19,14 @@ from django.urls import path
 from index.views import index
 from gec.views import correct_it
 
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#     path('translate/', correct_it),
+#     path('', index),
+# ]
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('translate/', correct_it),
-    path('', index),
+    path('gec/admin/', admin.site.urls),
+    path('gec/translate/', correct_it),
+    path('gec/', index),
 ]
