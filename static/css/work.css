@@ -544,6 +544,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
         max-width: 900px;
         padding: 0 8% 0 8.5%;
         font: inherit;
+        font-weight: bold;
     }
     .showText{
         position: relative;
