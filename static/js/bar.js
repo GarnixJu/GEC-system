@@ -121,7 +121,6 @@ function gec_it_post(query){
             // console.log(content);
             // $('#correct-sec').html(content);
             content = '<span>&nbsp &nbsp</span>' + content
-
             document.getElementById("show-text").innerHTML =  "<br />"  + content;
             
             // document.getElementById("show-text").textContent = content.result;
