@@ -531,6 +531,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     .showBox{
         position: relative;
         white-space: pre-wrap;
+    }
+    .showText{
+        position: relative;
+        display: block;
         word-wrap: break-word;
         word-break: break-word;
         border: none;
@@ -545,10 +549,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
         padding: 0 8% 0 8.5%;
         font: inherit;
         font-weight: bold;
-    }
-    .showText{
-        position: relative;
-        display: block;
        
     }
     ._ed4374-plainTextTitle{
