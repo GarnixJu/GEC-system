@@ -533,6 +533,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     }
     .showText{
         position: relative;
+        display: block;
+        padding: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        word-break: break-word;
+        border: none;
+        outline: none;
+        resize: none;
+        z-index: 0;
+        font-family: Diaria Light Pro,sans-serif;
+        line-height: 1.7em;
+        width: 100%;
+        height: 100%;
+        max-width: 900px;
+        padding: 0 8% 0 8.5%;
+        font: inherit;
     }
     ._ed4374-plainTextTitle{
         position: relative;
