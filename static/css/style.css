@@ -8708,33 +8708,34 @@ body,html {
     max-width: 1600px;
     width: 100%
 }
+/* left */
 
 @media only screen {
-    ._07439407-editor-page-editorLayout {
+    ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size: 14px
     }
 }
 
 @media only screen and (min-width: 600px) {
-    ._07439407-editor-page-editorLayout {
+    ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size:15px
     }
 }
 
 @media only screen and (min-width: 800px) {
-    ._07439407-editor-page-editorLayout {
+    ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size:17px
     }
 }
 
 @media only screen and (min-width: 1270px) {
-    ._07439407-editor-page-editorLayout {
+    ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size:19px
     }
 }
 
 @media only screen and (min-width: 1360px) {
-    ._07439407-editor-page-editorLayout {
+    ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size:21px
     }
 }

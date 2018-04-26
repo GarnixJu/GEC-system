@@ -45,6 +45,7 @@ function submitQuery(){
     //send to server and process response
     document.getElementById("bar2_colr").style.background="#323439";
 
+
     gec_it_post(text);
     $( "#show-box" )
     .css( 'border', 'solid 0.01em rgb(204, 230, 245)' );
@@ -119,6 +120,7 @@ function gec_it_post(query){
             replace(/(\r\n|\n)/g, "<br />");
             // console.log(content);
             // $('#correct-sec').html(content);
+            content = '<span>&nbsp &nbsp</span>' + content
             document.getElementById("show-text").innerHTML =  "<br />"  + content;
             
             // document.getElementById("show-text").textContent = content.result;
