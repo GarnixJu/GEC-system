@@ -40,8 +40,8 @@ var csrftoken = getCookie('csrftoken');
 		// console.log(text);
         //send to server and process response
 		gec_it_post(text);
-		$( "#show-box" )
-		.css( 'border', 'solid 0.01em rgb(204, 230, 245)' );
+	//		$( "#show-box" )
+	//	.css( 'border', 'solid 0.01em rgb(204, 230, 245)' );
 	}
 	
     function gec_it_post(query){
