@@ -60,7 +60,7 @@ var csrftoken = getCookie('csrftoken');
 				replace(/(\r\n|\n)/g, "<br />");
 				// console.log(content);
 				// $('#correct-sec').html(content);
-				content = '<span>&nbsp &nbsp</span>' + content
+				content = '<span>&nbsp; &nbsp;</span>' + content
 				document.getElementById("show-text").innerHTML =  "<br />"  + content;
 				
                 // document.getElementById("show-text").textContent = content.result;
