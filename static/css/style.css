@@ -8714,11 +8714,18 @@ body,html {
     ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size: 14px
     }
+    .textarea {
+        font-size: 14px
+    }
+    
 }
 
 @media only screen and (min-width: 600px) {
     ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size:15px
+    }
+    .textarea {
+        font-size: 15px
     }
 }
 
@@ -8726,18 +8733,29 @@ body,html {
     ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size:17px
     }
+    .textarea {
+        font-size: 17px
+    }
 }
 
 @media only screen and (min-width: 1270px) {
     ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size:19px
     }
+    .textarea {
+        font-size: 19px
+    }
+
 }
 
 @media only screen and (min-width: 1360px) {
     ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size:21px
     }
+    .textarea {
+        font-size: 21px
+    }
+    
 }
 
 @media only screen and (min-width: 1430px) {
