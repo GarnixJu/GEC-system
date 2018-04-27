@@ -61,6 +61,7 @@ var csrftoken = getCookie('csrftoken');
 				// console.log(content);
 				// $('#correct-sec').html(content);
 				// content = '<span>&nbsp; &nbsp;</span>' + content
+				console.log("<br />&nbsp;&nbsp;"  + content);
 				document.getElementById("show-text").innerHTML =  "<br />&nbsp;&nbsp;"  + content;
 				
                 // document.getElementById("show-text").textContent = content.result;
