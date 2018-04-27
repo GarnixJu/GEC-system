@@ -57,12 +57,12 @@ var csrftoken = getCookie('csrftoken');
 				var content = data.word_diff.replace(/\[-(.*?)-\]/g,
 				'<span class="deletion">$1</span>').
 				replace(/\{\+(.+?)\+\}/g, '<span class="correction">$1</span>').
-				replace(/(\r\n|\n)/g, "<br />&nbsp;&nbsp;");
+				replace(/(\r\n|\n)/g, "<br />");
 				// console.log(content);
 				// $('#correct-sec').html(content);
 				// content = '<span>&nbsp; &nbsp;</span>' + content
 				console.log(content);
-				document.getElementById("show-text").innerHTML =   content;
+				document.getElementById("show-text").innerHTML =  "<br />&nbsp;&nbsp;" + content;
 				
                 // document.getElementById("show-text").textContent = content.result;
             }, 
