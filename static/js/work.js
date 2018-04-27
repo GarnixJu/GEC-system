@@ -62,7 +62,7 @@ var csrftoken = getCookie('csrftoken');
 				// $('#correct-sec').html(content);
 				// content = '<span>&nbsp; &nbsp;</span>' + content
 				console.log(content);
-				document.getElementById("show-text").innerHTML =  "<br />&nbsp;&nbsp;" + content;
+				document.getElementById("show-text").innerHTML =  "<br />" + content;
 				
                 // document.getElementById("show-text").textContent = content.result;
             }, 
