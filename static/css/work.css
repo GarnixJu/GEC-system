@@ -424,17 +424,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     height: 50%;
 }
 
- .showBox{
-    width: 100%;
+ #show-box{
+    width: 90%;
     height: 100%;
     margin: 0.5em 0.5em 0.5em 0.5em;
+    word-break: normal;
     
 }
 
-.showText{
-    width: 100%;
+#show-text{
+    width: 95%;
     height: 100%;
-    padding: 0.5em 0.5em 0.5em 0.5em;
+    /* style="padding-left: 5px; padding-right: 5px;"*/
+    padding: 0.5em 0.5em 1em 0.5em;
+    word-break: normal;
 }
 
 /* for edited word */
