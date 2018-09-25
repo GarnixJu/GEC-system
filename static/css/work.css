@@ -426,7 +426,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
  #show-box{
     width: 50%;
-    height: 100%;
+    height: 90%;
     margin: 0.5em 0.5em 0.5em 0.5em;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -434,9 +434,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 #show-text{
-    width: 95%;
-    height: 100%;
+    width: 50%;
+    max-height: 50rem;
     display: block;
+    overflow: scroll;
     padding: 0.5em 0.5em 1em 0.5em;
     overflow-wrap: break-word;
     word-wrap: break-word;
