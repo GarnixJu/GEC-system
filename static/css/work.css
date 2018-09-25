@@ -208,7 +208,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
     }
 
-    @media screen and (max-width: 736px) {
+    @media screen and (max-width: 500px) {
 
         #header > * {
             margin-top: 2rem;
@@ -425,7 +425,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
  #show-box{
-    width: 500px;
+    width: 50%;
     height: 100%;
     margin: 0.5em 0.5em 0.5em 0.5em;
     overflow-wrap: break-word;
@@ -436,6 +436,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 #show-text{
     width: 95%;
     height: 100%;
+    display: block;
     padding: 0.5em 0.5em 1em 0.5em;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -544,6 +545,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
         font-family: Diaria Light Pro,sans-serif;
         line-height: 1.7em;
         font-weight: bold;
+        
        
     }
     ._ed4374-plainTextTitle{
