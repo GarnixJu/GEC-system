@@ -426,7 +426,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
  #show-box{
     width: 50%;
-    height: 90%;
+    height: auto;
     margin: 0.5em 0.5em 0.5em 0.5em;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -435,7 +435,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 #show-text{
     width: 50%;
-    max-height: 50rem;
+    max-height: 93vh;
     display: block;
     overflow: scroll;
     padding: 0.5em 0.5em 1em 0.5em;
