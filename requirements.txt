@@ -1,4 +1,5 @@
 Django
 django-cors-headers
-requests
 uWSGI
+torchtext==0.2.3
+torch
