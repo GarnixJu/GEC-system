@@ -3,3 +3,4 @@ django-cors-headers
 uWSGI
 torchtext==0.2.3
 torch
+spacy
