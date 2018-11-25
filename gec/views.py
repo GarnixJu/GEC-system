@@ -1,14 +1,26 @@
-from django.http import JsonResponse, HttpResponse
-from django.views.decorators.csrf import csrf_exempt
-import requests
+from django.http import JsonResponse
+import spacy
+import json
+import os
 
-API_URL = 'http://thor.nlplab.cc:1214/translate/'
-HEADERS = {'Content-Type': 'application/json'}
+from .translate import translate
+from .wdiff import wdiff
 
 
-# @csrf_exempt
+nlp = spacy.load(os.environ.get('SPACY_MODEL', 'en'))
+
+
 def correct_it(request):
     if request.is_ajax() and request.method == 'POST':
-        r = requests.post(API_URL, headers=HEADERS, data=request.body)
-        # return JsonResponse(r.json())
-        return HttpResponse(content=r.content, status=r.status_code)
+        data = json.loads(request.body.decode('utf-8'))
+        text = data.get('text', '')
+
+        # tokenize text using spaCy
+        tokenized_text = '\n'.join('\n'.join(' '.join(token.text for token in sent) for sent in nlp(line.strip()).sents) for line in text.splitlines() if line.strip())
+        # correct it
+        corrected_text = translate(tokenized_text)
+        data['result'] = corrected_text
+        diff = [' '.join(wdiff(before, after)) for before, after in zip(tokenized_text.splitlines(), corrected_text.splitlines())]
+        data['word_diff'] = '\n'.join(diff)
+        data['word_diff_by_sent'] = diff
+        return JsonResponse(data)
