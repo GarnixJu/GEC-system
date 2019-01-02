@@ -28,7 +28,7 @@ function submitQuery(){
     document.getElementById("bar2_colr").style.background = "#323439";
 
     gec_it_post(text);
-    score_it_post(text);
+    // score_it_post(text);
     $( "#show-box" ).css( 'border', 'solid 0.01em rgb(204, 230, 245)');
 }
 
