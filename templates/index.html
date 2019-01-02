@@ -25,38 +25,16 @@
                             <div class="_de91e2-dropzoneMiddleblock">Drop a text file here</div>
                         </div>
                     </div>
-                    <div class="_4afb5096-editor-page-content fs-hide">
-                        <!-- -->
+                    <div class="content fs-hide">
                         <div data-name="doc-toolbar" class="_747451-toolbar">
                             
                             <div class="_747451-item submit-btn">
                                 <div id = "bar2_colr" class="_bar _ba2"></div>
                                 <div class="_747451-menuBlock _747451-noWrap">
-                                    <div class="_747451-toolItem _work">Submit Button</div>
+                                    <div class="_747451-toolItem _work">批改</div>
                                 </div> 
                             </div>
                             
-                            <div class="_747451-item">
-                                <div class="_bar _ba3"></div>
-                                <div class="_747451-menuBlock _747451-noWrap">
-                                    <div class="_747451-toolItem _contact">Contact</div>
-                                </div>
-                            </div>
-                            <div class="_747451-separator"></div>
-                            
-                            <div class="_747451-item">
-                                <div class="_bar _ba4"></div>
-                                <div class="_747451-menuBlock _747451-noWrap">
-                                        <div class="_747451-toolItem _Linggle">Linggle</div>
-                                </div>   
-                            </div>
-
-                            <div class="_747451-item">
-                                    <div class="_bar _ba5"></div>
-                                    <div class="_747451-menuBlock _747451-noWrap">
-                                            <div class="_747451-toolItem _WriteAhead">WriteAhead</div>
-                                    </div>   
-                            </div>
                            
                         </div>
 
@@ -65,61 +43,15 @@
                        
                             <div class="_af1f0d33-editor-page-scrollWrap" >
                                 <div style="height:100%">
-                                    <!-- react-empty: 803 -->
-                                   
-                                       <!-- <div class="_07439407-editor-page-editorLayout">
-                                            <div class="_12f1a8c9-editor-page-editorCol" style="transform: translateY(0px);">
-                                                <div class="_bfb86e66-editor-page-titleWrap">
-                                                    <input type="text" data-name="doc-title" class="_58bed4cb-editor-page-title"
-                                                        placeholder="Type your title" maxlength="50" value="">
-                                                </div>
+                                    
+                                        <div class="editorLayout" style="height:100%;">
+                                            <div id="editorWrapper" class="editorCol" >
+                                                <textarea id="textarea" class="textarea" spellcheck="false" style="overflow:scroll" placeholder="Type or paste (⌘V) your text here."></textarea>
                                             </div>
-                                        </div>-->
-                                        <div class="_07439407-editor-page-editorLayout" style="height:100%;">
-                                            <div id="editorWrapper" class="_12f1a8c9-editor-page-editorCol" >
-                                                <!--<div class="gram-ghost" gramm_editor="true" contenteditable="true" tabindex="-1"
-                                                    id="9fcdc323-7351-37fe-abca-5942d88665af" gramm_id="9fcdc323-7351-37fe-abca-5942d88665af">
-                                                    <span class="clone-val">
-                                                        <gr_block p="0,10" style="display: inline;">
-                                                            <g class="gr_ gr_44 gr-alert gr_tiny gr_gramm gr_hide gr_premium gr_disable_anim_appear"
-                                                                data-gr-id="44" id="44">I</g>
-                                                            <g class="gr_ gr_43 gr-alert gr_gramm" data-gr-id="43"
-                                                                id="43">a girls</g>.</gr_block>
-                                                    </span>
-                                                </div>-->
-                                                <textarea id="textarea" class="textarea" spellcheck="false" style="overflow:scroll" placeholder="Type or paste (⌘V) your text here."
-                                                   ></textarea>
-                                            </div>
-                                            <div  class="_12f1a8c9-editor-page-editorCol">
-                                                <div>
-                                                    <div class="cardBaseClassName _72569e-card "
-                                                      >
-                                                                <div class="_ed4374-header">
-                                                                    <div id="show-box"   >
-                                                                      
-                                                                    </div>
-                                                                    <div id="show-text">
-                                                                    </div>
-                                                                </div>
-                                                    </div>
-                                                    <div class="cardBaseClassName _72569e-card _72569e-cardCollapsed _72569e-animatePosition">
-                                                        <div>
-                                                            <div>
-                                                                <div class="_ed4374-header">
-                                                                    <div class="_ed4374-headerButtons">
-                                                                        <!--<span class="_ed4374-buttonWrapper _ed4374-headerButton _ed4374-btnExpand"
-                                                                            role="button"></span>
-                                                                        <span class="_ed4374-buttonWrapper _ed4374-headerButton _ed4374-btnIgnore"
-                                                                            role="button"></span>-->
-                                                                    </div>
-                                                                    <div class="_ed4374-title" data-name="title">
-                                                                        <div class="_ed4374-plainTextTitle"  >&nbsp&nbsp Suggestions </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <div class="editorCol">
+                                                <div class="bold">批改建議</div>
+                                                <div id="suggestion-area"><span class="small">← 按下左側勾勾取得批改建議...</span></div>
+                                                <div class="bold">評分預測&nbsp;<span class="score warning"></span> </div>
                                             </div>
                                             <div>
                                                 <div></div>
@@ -129,54 +61,11 @@
                                 </div>
                             </div>
                         
-                       <!-- <div class="_ff9902-toolbarWrap">
-                            <div class="_ff9902-toolbar">
-                                <div class="_ff9902-editorCol">
-                                    <div class="_ff9902-genre">General (default)</div>
-                                    <div class="_ff9902-stats">
-                                        <div data-name="text-stats">
-                                            <span>3 WORDS</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="_ff9902-statsCol">
-                                    <div class="_ff9902-statsWrap 0">
-                                        <span class="_ff9902-critical">
-                                            <span class="_ff9902-value">1</span>-->
-                                            <!-- react-text: 1264 --><!--CRITICAL-->
-                                            <!-- /react-text -->
-                                            <!-- react-text: 1265 -->
-                                            <!-- /react-text -->
-                                            <!-- react-text: 1266 --><!--ISSUE-->
-                                            <!-- /react-text -->
-                                       <!-- </span>
-                                        <span class="_ff9902-premium">
-                                            <span class="_ff9902-value">1</span>-->
-                                            <!-- react-text: 1269 --><!--ADVANCED-->
-                                            <!-- /react-text -->
-                                            <!-- react-text: 1270 -->
-                                            <!-- /react-text -->
-                                            <!-- react-text: 1271 --> <!--ISSUE-->
-                                            <!-- /react-text -->
-                                       <!-- </span>
-                                        <span class="_ff9902-score">-->
-                                            <!-- react-text: 1273 --> <!--SCORE:-->
-                                            <!-- /react-text -->
-                                          <!--  <span class="_ff9902-value">0</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                       <!-- <div role="tooltip">
-                            <div class="_0f3db3bb-tooltip-tooltip" style="top: 0px; left: 0px; opacity: 0; transition: none;"></div>
-                        </div>-->
                     </div>
                 </div>
                 <div></div>
                 <div></div>
                 <div>
-                    <!-- react-empty: 797 -->
                 </div>
            
        

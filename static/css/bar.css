@@ -11,9 +11,24 @@ img{
     top:15px;
 }
 
+.danger {
+    color: #FF4136;
+}
 
+.warning {
+    color: #FF851B;
+}
 
+.bold {
+    font-weight: bold;
+}
 
+.small {
+    font-size: .7rem;
+}
 
-
-
+#suggestion-area {
+    border: 1px solid gainsboro;
+    padding: 3px;
+    margin: 3px 0;
+}

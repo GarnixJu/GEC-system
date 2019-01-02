@@ -8628,10 +8628,9 @@ body,html {
     visibility: visible
 }
 
-._4afb5096-editor-page-content {
+.content {
     position: relative;
     display: table;
-    min-width: 840px;
     width: 100%;
     height: 100%
 }
@@ -8655,10 +8654,6 @@ body,html {
    /* border-bottom: 35px solid transparent;
     transition: padding-top .2s*/
 }
-
-/* ._1b272a6a-editor-page-newDocument ._07439407-editor-page-editorLayout:first-child {
-    padding-top: 155px
-} */
 
 ._bfb86e66-editor-page-titleWrap {
     margin: 12px 0 20px;
@@ -8701,8 +8696,7 @@ body,html {
     width: 100%
 }
 
-._07439407-editor-page-editorLayout {
-    
+.editorLayout {
     display: -webkit-flex;
     display: flex;
     max-width: 1600px;
@@ -8711,7 +8705,7 @@ body,html {
 /* left */
 
 @media only screen {
-    ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
+    .editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size: 14px
     }
     .textarea {
@@ -8721,7 +8715,7 @@ body,html {
 }
 
 @media only screen and (min-width: 600px) {
-    ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
+    .editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size:15px
     }
     .textarea {
@@ -8730,7 +8724,7 @@ body,html {
 }
 
 @media only screen and (min-width: 800px) {
-    ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
+    .editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size:17px
     }
     .textarea {
@@ -8739,7 +8733,7 @@ body,html {
 }
 
 @media only screen and (min-width: 1270px) {
-    ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
+    .editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size:19px
     }
     .textarea {
@@ -8749,7 +8743,7 @@ body,html {
 }
 
 @media only screen and (min-width: 1360px) {
-    ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
+    .editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size:21px
     }
     .textarea {
@@ -8759,16 +8753,16 @@ body,html {
 }
 
 @media only screen and (min-width: 1430px) {
-    ._07439407-editor-page-editorLayout ._adbfa1e6-editor-page-cardsCol {
+    .editorLayout ._adbfa1e6-editor-page-cardsCol {
         font-size:15px
     }
 }
 
-._07439407-editor-page-editorLayout:first-child {
+.editorLayout:first-child {
     transition: padding-top .2s
 }
 
-._12f1a8c9-editor-page-editorCol,._adbfa1e6-editor-page-cardsCol {
+.editorCol,._adbfa1e6-editor-page-cardsCol {
     z-index: 1;
    /* transition: margin .2s */
 }
@@ -8781,18 +8775,10 @@ body,html {
     font-size: 14px
 }
 
-._12f1a8c9-editor-page-editorCol,._adbfa1e6-editor-page-cardsCol {
-   /* position: relative;
-    transition: -webkit-transform .4s;
-    transition: transform .4s;
-    transition: transform .4s,-webkit-transform .4s*/
-}
-
-._12f1a8c9-editor-page-editorCol {
+.editorCol {
     min-width: 283px;
     max-width: 950px;
-    width: 64%;
-/*    will-change: transform*/
+    width: 50%;
 }
 
 ._3e46e1b1-editor-page-bannerWrapper {

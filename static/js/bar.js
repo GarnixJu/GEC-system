@@ -21,21 +21,6 @@ bar4.html(bar4_htmlFrag);
 bar5.html(bar5_htmlFrag);
 
 
-$('._747451-toolItem._contact').click(function(){
-    window.open("http://www.nlplab.cc/");
-    //document.location.href="http://www.nlplab.cc/";
-});
-
-$('._747451-toolItem._Linggle').click(function(){
-    window.open("http://linggle.com/");
-    //document.location.href="http://linggle.com/";
-});
-
-$('._747451-toolItem._WriteAhead').click(function(){
-    window.open("http://writeahead.nlpweb.org/more");
-    //document.location.href="http://writeahead.nlpweb.org/more";
-});
-
 function submitQuery(){
     var text = $('#textarea').val();
     // console.log(text);
@@ -43,6 +28,7 @@ function submitQuery(){
     document.getElementById("bar2_colr").style.background = "#323439";
 
     gec_it_post(text);
+    score_it_post(text);
     $( "#show-box" ).css( 'border', 'solid 0.01em rgb(204, 230, 245)');
 }
 
@@ -75,7 +61,7 @@ $( "#textarea" ).keyup(function(){
 
 
 function gec_it_post(query){
-    // document.getElementById("show-box").textContent = "result:"+query;
+    $("#suggestion-area").html('<span class="small">批改中...</span>');
     $.ajax({
         type: "POST",
         url: API_URL,
@@ -87,11 +73,30 @@ function gec_it_post(query){
             var content = data.word_diff
                 .replace(/\[-(.*?)-\]/g, '<span class="deletion">$1</span>')
                 .replace(/\{\+(.+?)\+\}/g, '<span class="correction">$1</span>')
-                .replace(/(\r\n|\n)/g, "<br />");
+                .replace(/(\r\n|\n)/g, "<br>");
             console.log(content);
+            content += '<br><span class="small warning">很抱歉，本系統僅能偵測出部分錯誤 T_T</span>';
                 
-            document.getElementById("show-text").innerHTML =  "<br />" + content;
-            // document.getElementById("show-text").textContent = content.result;
+            document.getElementById("suggestion-area").innerHTML = content;
+        }, 
+        error: function(XMLHttpRequest, textStatus, errorThrown) { 
+            console.log("Status: " + textStatus); 
+            console.log("Error: " + errorThrown); 
+        }
+    });
+}
+
+
+function score_it_post(text){
+    // document.getElementById("show-box").textContent = "result:"+query;
+    $.ajax({
+        type: "POST",
+        url: "http://thor.nlplab.cc:7777/aes",
+        data: JSON.stringify({courpus: text}),
+        dataType: 'text',
+        success: function (data) {
+            console.log(data);
+            $(".score").text(data);
         }, 
         error: function(XMLHttpRequest, textStatus, errorThrown) { 
             console.log("Status: " + textStatus); 

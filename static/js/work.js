@@ -32,15 +32,11 @@ const csrftoken = $("input[name=csrfmiddlewaretoken]").val();
     });
     // HEADERS = {'Content-Type': 'application/json; charset=UTF-8', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*'}
 
-	// $( "#show-text:empty" )
-	// 	.text( "Was empty!" )
-	// 	.css( "background", "rgb(255,220,200)" );
-	
 	$( "#enterValue" ).on('input',function(e){
 		var v = $('textarea#enterValue').val();
 		if(v == "") {
 			$( "#show-box" ).css( "border", "none" );
-			document.getElementById("show-text").textContent = "";
+			document.getElementById("suggestion-area").textContent = "";
 			$( "#show-box" ).css( 'border', 'none' );
 		}
 	});
