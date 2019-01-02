@@ -8764,7 +8764,7 @@ body,html {
 
 .editorCol,._adbfa1e6-editor-page-cardsCol {
     z-index: 1;
-   /* transition: margin .2s */
+   transition: margin .2s
 }
 
 ._adbfa1e6-editor-page-cardsCol {

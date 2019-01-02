@@ -32,3 +32,7 @@ img{
     padding: 3px;
     margin: 3px 0;
 }
+
+#feedbackWrapper {
+    max-width: 550px;
+}
