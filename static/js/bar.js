@@ -75,7 +75,7 @@ function gec_it_post(query){
                 .replace(/\{\+(.+?)\+\}/g, '<span class="correction">$1</span>')
                 .replace(/(\r\n|\n)/g, "<br>");
             console.log(content);
-            content += '<br><span class="small warning">很抱歉，本系統僅能偵測出部分錯誤 T_T</span>';
+            // content += '<br><span class="small warning">很抱歉，本系統僅能偵測出部分錯誤 T_T</span>';
                 
             document.getElementById("suggestion-area").innerHTML = content;
         }, 
