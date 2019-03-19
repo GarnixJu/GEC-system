@@ -4,10 +4,10 @@ import json
 import os
 
 from .translate import translate
-from .wdiff import wdiff
+from errant.parallel_to_diff import parallel_to_diff
 
 
-nlp = spacy.load(os.environ.get('SPACY_MODEL', 'en'))
+nlp = spacy.load(os.environ.get('SPACY_MODEL', 'en'), disable=['ner'])
 
 
 def correct_it(request):
@@ -23,8 +23,8 @@ def correct_it(request):
     tokenized_text = '\n'.join('\n'.join(' '.join(token.text for token in sent) for sent in nlp(line.strip()).sents) for line in text.splitlines() if line.strip())
     corrected_text = translate(tokenized_text)
     data['result'] = corrected_text
-    diff = [' '.join(wdiff(before, after)) for before, after in zip(tokenized_text.splitlines(), corrected_text.splitlines())]
+    diff = [parallel_to_diff(tokenized_text, corrected_text, nlp)
+            for before, after in zip(tokenized_text.splitlines(), corrected_text.splitlines())]
     data['word_diff'] = '\n'.join(diff)
     data['word_diff_by_sent'] = diff
     return JsonResponse(data)
-

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'index',
     'onmt',
     'gec',
+    'errant',
 ]
 
 MIDDLEWARE = [
