@@ -28,7 +28,7 @@ def correct_it(request):
     corrected_text = translate(tokenized_text)
 
     data['result'] = corrected_text
-    diff = [parallel_to_diff(tokenized_text, corrected_text, nlp)
+    diff = [parallel_to_diff(before, after, nlp)
             for before, after in zip(lines, corrected_text.splitlines())]
     data['word_diff'] = '\n'.join(diff)
     data['word_diff_by_sent'] = diff
