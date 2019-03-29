@@ -20,11 +20,16 @@ def correct_it(request):
     else:
         data = {}
 
-    tokenized_text = '\n'.join('\n'.join(' '.join(token.text for token in sent) for sent in nlp(line.strip()).sents) for line in text.splitlines() if line.strip())
+    lines = [' '.join(token.text for token in sent)
+             for line in text.splitlines() if line.strip()
+             for sent in nlp(line.strip()).sents
+             ]
+    tokenized_text = '\n'.join(lines)
     corrected_text = translate(tokenized_text)
+
     data['result'] = corrected_text
     diff = [parallel_to_diff(tokenized_text, corrected_text, nlp)
-            for before, after in zip(tokenized_text.splitlines(), corrected_text.splitlines())]
+            for before, after in zip(lines, corrected_text.splitlines())]
     data['word_diff'] = '\n'.join(diff)
     data['word_diff_by_sent'] = diff
     return JsonResponse(data)
