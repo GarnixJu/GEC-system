@@ -1,4 +1,4 @@
-from django.http import JsonResponse
+from django.http import JsonResponse , HttpResponse
 import spacy
 import json
 import os
