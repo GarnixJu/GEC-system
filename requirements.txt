@@ -4,3 +4,4 @@ uWSGI
 torchtext==0.2.3
 torch
 spacy
+python-docx
